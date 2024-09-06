@@ -12,8 +12,8 @@ set HDD_SIZE=64000
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" storageattach %VM_NAME% --storagectl "SATA Controller" --port 0 --device 0 --type hdd --medium "%VM_NAME%_disk.vdi"
 
 :: Pause pour vérifier la création
-pause
+::pause
 
 :: Suppression de la machine virtuelle
-"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" unregistervm %VM_NAME% --delete
+::"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" unregistervm %VM_NAME% --delete
 
