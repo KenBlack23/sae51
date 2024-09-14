@@ -203,7 +203,7 @@ function stop_vm {
     echo "VM $VM_NAME arrêtée."
 }
 
-# Fonction du menu
+### Fonction du menu
 function menu {
     echo
     echo "Utilisation :"
