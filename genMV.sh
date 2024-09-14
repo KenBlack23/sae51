@@ -239,7 +239,7 @@ if [[ $# -gt 0 ]]; then
     exit 0
 fi
 
-# Lancer la vérification de VirtualBox
+## Lancer la vérification de VirtualBox
 check_virtualbox_open
 
 # Boucle de menu
