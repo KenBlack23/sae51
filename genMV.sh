@@ -98,7 +98,7 @@ function list_vms {
 # Fonction pour créer une nouvelle VM
 function create_vm {
     while true; do
-        read -p "Entrez le nom de la machine (max 15 caractères, format: Rôle-Localisation-Numéro): " VM_NAME
+        read -p "Entrez le nom de la machine (format: Rôle-Localisation-Numéro): " VM_NAME
 
         # Vérification si une machine avec ce nom existe déjà
         existing_vm=$("$VBOXMANAGE" list vms | grep "\"$VM_NAME\"")
@@ -248,4 +248,5 @@ while true; do
 done
 
 read -p "Appuyez sur Entrée pour quitter..."
+
 
